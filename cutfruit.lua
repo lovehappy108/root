@@ -17,6 +17,9 @@
 		end
 		PlayerPrefbs.set("playerData", {});
 		PlayerPrefbs.saveFile();
+		if DCEvent and DCEvent.onEventCount then
+			DCEvent.onEventCount("盗版检测", 1)
+		end
 	end
 
 
